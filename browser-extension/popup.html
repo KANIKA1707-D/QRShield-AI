@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>QRShield AI URL Analyzer</title>
+  <style>
+    body {font-family: Arial, sans-serif; background:#1e1e1e; color:#e0e0e0; margin:0; padding:10px; width:300px;}
+    a {color:#4e9af1;}
+    button {background:#4e9af1; color:#fff; border:none; padding:5px 10px; border-radius:4px; cursor:pointer;}
+    button:disabled {opacity:0.6; cursor:not-allowed;}
+    .loader {margin-top:5px;}
+    .result {margin-top:10px;}
+    .error {color:#ff6b6b; margin-top:5px;}
+  </style>
+</head>
+<body>
+  <h3>QRShield AI</h3>
+  <p>Current URL: <span id="url">Loading...</span></p>
+  <button id="analyzeBtn">Analyze URL</button>
+  <div id="loader" class="loader" style="display:none;">Analyzing…</div>
+  <div id="error" class="error"></div>
+  <div id="result" class="result"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
